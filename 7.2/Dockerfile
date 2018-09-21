@@ -1,6 +1,6 @@
 FROM php:7.2-cli-alpine
 
-ENV DEPLOYER_VERSION latest
+WORKDIR /app
 
 RUN apk add --no-cache tzdata bash curl
 
