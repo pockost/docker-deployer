@@ -18,8 +18,6 @@ if [ $status == 200 ]; then
 
   chmod +x /usr/local/bin/dep
 
-  dep
-
 else
 
   rm deployer.phar
@@ -27,3 +25,5 @@ else
   exit
 
 fi
+
+exec "$@"
